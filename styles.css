@@ -1,0 +1,94 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: stretch;
+  font-size: calc(10px + 0.8vw);
+  font-family: LexendDeca, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(24, 24, 24);
+  overflow: none;
+}
+
+.spacer { flex: 1; }
+
+button {
+  border-radius: 1rem;
+  height: 2rem;
+  border: 0;
+  background: #6CF0BD;
+  font-weight: bold;
+  padding: 0 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+nav {
+  padding: 0 3rem;
+  height: 3rem;
+  background: lightgray;
+  align-items: center;
+}
+nav img {
+  height: 100%;
+}
+nav a {
+  font-weight: 500;
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.primary {
+  color: #FFCF03;
+}
+
+.row {
+  display: flex;
+}
+.row--wrap {
+  flex-wrap: wrap;
+}
+.row--centered {
+  align-items: center;
+}
+
+.row__item--one, .row__item--two, .row__item--three, .row__item--four, .row__item--five {
+  min-width: 450px;
+  margin: 1rem;
+}
+.row__item--one {
+  flex: 1 0 51%;
+} 
+.row__item--two {
+  flex: 1 0 34%;
+} 
+.row__item--three {
+  flex: 1 0 26%;
+} 
+.row__item--four {
+  flex: 1 0 21%;
+}
+.row__item--five {
+  flex: 1 0 16%;
+}
+
+.section {
+  margin: 0 auto;
+}
+.section--spaced {
+  flex: 1;
+  max-width: 1000px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.column--centered {
+  align-items: center;
+}
